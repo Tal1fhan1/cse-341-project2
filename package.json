@@ -1,0 +1,31 @@
+{
+  "name": "cse-341-project2",
+  "version": "1.0.0",
+  "description": "My Second Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tal1fhan1/cse-341-project2.git"
+  },
+  "author": "Talifhani Netshiheni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tal1fhan1/cse-341-project2/issues"
+  },
+  "homepage": "https://github.com/Tal1fhan1/cse-341-project2#readme",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "body-parser": "^2.2.0",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "http-errors": "^2.0.0",
+    "mongodb": "^6.16.0",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "swagger-autogen": "^2.23.7"
+  }
+}
