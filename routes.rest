@@ -1,8 +1,8 @@
 ### GET all laptops
-GET http://localhost:3000/laptops
+GET http://localhost:3000/laptop
 
 ### GET single laptop
-GET http://localhost:3000/laptops/6833426862a67ec55678f89
+GET http://localhost:3000/laptops/6833426862a67ec55678f879
 
 ### Create laptop
 POST http://localhost:3000/laptops HTTP/1.1
@@ -21,15 +21,16 @@ PUT http://localhost:3000/laptops/6833426862a67ec55678f879 HTTP/1.1
 content-type: application/json
 
 {   
-    "manufacturer": "Acer",
-    "model": "Predator Neo",
-    "price": "$1,447",
-    "display": "2560x1600 IPS 165Hz",
-    "graphicsCard": "NVIDIA GeForce RTX 4050"
+    "manufacturer": "Lenovo",
+    "model": "Legion 5i",
+    "price": "$2,243",
+    "display": "2560x1600 IPS 165Hz Anti-Glare",
+    "graphicsCard": "NVIDIA GeForce RTX 4070"
 }
 
 ### Delete laptop
-DELETE http://localhost:3000/laptops/6833426862a67ec55678f879
+DELETE http://localhost:3000/laptops/68363838945a5abba063e10b HTTP/1.1
+content-type: application/json
 
 
 ### GET All laptops (Render)

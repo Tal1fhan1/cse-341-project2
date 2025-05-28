@@ -13,7 +13,7 @@ const laptopSchema = joi.object({
     model: joi.string().min(3).max(30).required(),
     price: joi.string().min(3).max(20).required(),
     display: joi.string().min(3).max(50).required(),
-    graphicsCard: joi.string().min(5).max(10).required()
+    graphicsCard: joi.string().min(5).max(50).required()
 })
 
 module.exports = {
