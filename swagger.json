@@ -5,10 +5,10 @@
     "description": "API containing my vehicle and laptop wishlist :)",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse-341-project2-xn2c.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
