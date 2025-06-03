@@ -3,14 +3,16 @@ const router = express.Router();
 
 const vehicleController = require('../controllers/vehicles');
 
+const {isAuthenticated} = require("../middleware/authenticate")
+
 router.get('/', vehicleController.getAll);
 
 router.get('/:id', vehicleController.getSingle);
 
-router.post('/', vehicleController.createVehicle);
+router.post('/', isAuthenticated, vehicleController.createVehicle);
 
-router.put('/:id', vehicleController.updateVehicle);
+router.put('/:id', isAuthenticated, vehicleController.updateVehicle);
 
-router.delete('/:id', vehicleController.deleteVehicle);
+router.delete('/:id', isAuthenticated, vehicleController.deleteVehicle);
 
 module.exports = router;
